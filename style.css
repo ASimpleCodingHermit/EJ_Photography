@@ -45,27 +45,30 @@ h2 {
   font-size: var(--header2);
 }
 h3 {
-  font-size:var(--header3);
+  font-size: var(--header3);
 }
 h4,
 h5 {
   font-size: var(--header4);
 }
 
-ul{
+ul {
   list-style: none;
 }
 a {
   text-decoration: none;
 }
 
-.flex{
+.flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-body{
-  font-family: "Ruhl", sans-serif;
+body {
+  font-family: 'Ruhl', sans-serif;
+}
+h1 {
+  font-family: 'Vibes', sans-serif;
 }
