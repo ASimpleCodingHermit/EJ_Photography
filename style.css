@@ -107,6 +107,20 @@ nav {
 
 .hero-intro {
   flex: 2 1 40rem;
+  text-align: center;
+}
+
+.hero-intro p {
+  padding: 5rem 10rem;
+}
+
+.hero-intro h2 {
+  padding-top: 3rem;
+}
+.hero-intro a {
+  padding: 2rem 8rem;
+  border: 3px solid black;
+  margin-bottom: 4rem;
 }
 
 .hero-images {
