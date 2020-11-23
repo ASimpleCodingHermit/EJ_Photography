@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Travelly, a premiere choice in your winter holiday vacation planning"
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="icon" href="images/icons/globe.svg" />
+    <title>Travelly | Travel Agency</title>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <h1 id="logo">TRAVELLY</h1>
+        <ul>
+          <li>
+            <a href="#locations" title="link-to-locations-section">Locations</a>
+          </li>
+          <li>
+            <a href="#benefits" title="link-to-benefits-section">Benefits</a>
+          </li>
+          <li><a href="#contact" title="link-to-contct-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>Travel Beyond Limits</h2>
+        <h3>
+          Start your travel affordably with Travelly <br />Contact us below for
+          more information
+        </h3>
+        <button>Book Now</button>
+      </section>
+      <section id="locations">
+        <header class="locations__head">
+          <h2>The Perfect Traveling Experience.</h2>
+          <h3>
+            We cover everything from picking the perfect hotel, flight, and
+            destination.
+          </h3>
+          <img
+            src="/images/Cloud.png"
+            class="moving-cloud-1 cloud"
+            alt="Cloud.png"
+          />
+          <img
+            src="/images/Cloud.png"
+            class="moving-cloud-2 cloud"
+            alt="Cloud.png"
+          />
+        </header>
+      </section>
+      <section class="benefits">
+        <header class="benefits__head">
+          <h2>The Perfect Travel</h2>
+          <h3>We cover everything for you.</h3>
+        </header>
+        <div class="cards">
+          <div class="card">
+            <div class="card__icon">
+              <i class="fas fa-route fa-6x"></i>
+            </div>
+            <h4>Travel</h4>
+            <p>Travel to over 250 countries with minimal effort</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">
+              <i class="fas fa-bed fa-6x"></i>
+            </div>
+            <h4>Hotel</h4>
+            <p>Hotels located near popular destinations in major cities.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">
+              <i class="fas fa-plane-departure fa-6x"></i>
+            </div>
+            <h4>Fly</h4>
+            <p>Flight included in every purchased package.</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="form-wrapper">
+          <header class="form__head">
+            <h2>Contact Us</h2>
+          </header>
+          <form action="https://formspree.io/f/xgepzgej" method="POST">
+            <div class="form__name">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form__email">
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="_replyto" required />
+            </div>
+            <button type="submit" value="send">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <h5><a href="#logo" title="link-to-top">Travelly</a> &copy; 2020</h5>
+        <ul>
+          <li>
+            <a href="#" title="twitter-social-media"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" title="facebook-social-media"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" title="linkedin-social-media"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
