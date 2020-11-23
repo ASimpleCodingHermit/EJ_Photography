@@ -37,7 +37,8 @@ li,
 button,
 label,
 input,
-p {
+p,
+a {
   font-size: var(--text);
 }
 
@@ -57,6 +58,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 
 .flex {
@@ -71,4 +73,47 @@ body {
 }
 h1 {
   font-family: 'Vibes', sans-serif;
+}
+
+/* Nav Section */
+.main-head {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0;
+}
+#logo {
+  flex: 1 1 20rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
+}
+
+.hero {
+  min-height: 90vh;
+  margin: 0 0 0 auto;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-intro {
+  flex: 2 1 40rem;
+}
+
+.hero-images {
+  flex: 1 1 40rem;
+}
+.hero-elena {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
