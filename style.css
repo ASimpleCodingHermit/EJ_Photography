@@ -78,6 +78,8 @@ h1 {
 /* Nav Section */
 .main-head {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: relative;
 }
 nav {
   width: 90%;
@@ -103,6 +105,7 @@ nav {
   width: 95%;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .hero-intro {
@@ -125,9 +128,23 @@ nav {
 
 .hero-images {
   flex: 1 1 40rem;
+  background: linear-gradient(#dad8dd, #dad1d4);
+  position: relative;
+  z-index: 1;
 }
 .hero-elena {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.plant {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  z-index: -1;
+}
+
+.plant2 {
+  left: 40%;
 }
