@@ -200,3 +200,7 @@ nav {
     -o-transform: rotateZ(0deg);
   }
 }
+
+@media screen and (max-width:842px){
+  
+}
