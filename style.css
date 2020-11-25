@@ -347,4 +347,9 @@ nav {
     -ms-transform: rotateZ(-45deg) translateY(-300%);
     -o-transform: rotateZ(-45deg) translateY(-300%);
   }
+  
+  /* About Section */
+  .about-text div{
+    padding: 3rem;
+  }
 }
