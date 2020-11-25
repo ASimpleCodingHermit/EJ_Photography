@@ -58,7 +58,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: var(--gray-text)
 }
 
 .flex {
@@ -117,6 +117,7 @@ nav {
 
 .hero-intro p {
   padding: 5rem 10rem;
+  color: var(--gray-text);
 }
 
 .hero-intro h2 {
@@ -151,6 +152,7 @@ nav {
   -webkit-animation: plant_entrance 1.5s ease-in-out 0.5s forwards,
     plant-shake 2.5s infinite ease-in-out alternate-reverse 2s;
   transform-origin: bottom;
+  max-height: 80%;
 }
 
 .plant2 {
@@ -207,6 +209,13 @@ nav {
 }
 
 @media screen and (max-width: 842px) {
+  .hero {
+    width: 100%;
+  }
+  hero-intro p {
+    padding: 5rem 3rem;
+  }
+  /* Burger Menu */
   .burger {
     position: relative;
     display: block;
@@ -216,12 +225,12 @@ nav {
     background: var(--gray-text);
     display: block;
     margin: 0.5rem 0rem;
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-}
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
   .nav-links a {
     color: white;
     font-size: var(--header3);
@@ -275,15 +284,15 @@ nav {
     -ms-transform: rotateZ(45deg) translateY(300%);
     -o-transform: rotateZ(45deg) translateY(300%);
   }
-  .menu-check:checked ~ .burger span:nth-child(2){
+  .menu-check:checked ~ .burger span:nth-child(2) {
     opacity: 0;
   }
-  
+
   .menu-check:checked ~ .burger span:nth-child(3) {
     transform: rotateZ(-45deg) translateY(-300%);
     -webkit-transform: rotateZ(-45deg) translateY(-300%);
     -moz-transform: rotateZ(-45deg) translateY(-300%);
     -ms-transform: rotateZ(-45deg) translateY(-300%);
     -o-transform: rotateZ(-45deg) translateY(-300%);
-}
+  }
 }
