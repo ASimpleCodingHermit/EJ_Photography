@@ -24,7 +24,7 @@ html {
   --header3: calc(3rem + 1vw);
   --header4: calc(2.4rem + 1vw);
   --text: calc(1.5rem + 1vw);
-  --large: calc(2.4rem + 1vw);
+  --large: calc(6rem + 1vw);
   --accent-color: #906272;
   --bg-color: #424242;
   --gray-text: #525252;
@@ -283,7 +283,7 @@ nav {
   grid-row: 1/3;
 }
 
-.gallery-head{
+.gallery-head {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -296,6 +296,50 @@ nav {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+
+/* Contact Section */
+.contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact img {
+  flex: 1 1 40rem;
+}
+.form-wrapper {
+  flex: 3 1 40rem;
+}
+
+.form-wrapper h2 {
+  margin-bottom: 5rem;
+}
+
+.form-wrapper span {
+  font-size: var(--large);
+  color: var(--accent-color);
+}
+
+.form-wrapper label {
+  display: block;
+}
+
+.form-wrapper input {
+  display: block;
+  margin: 3rem 0rem;
+  background: var(--bg-color);
+  color: white;
+  border: none;
+  padding: 1rem;
+}
+
+.form-wrapper button {
+  padding: 1rem 8rem;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  width: 100%;
 }
 
 @media screen and (max-width: 842px) {
@@ -396,10 +440,10 @@ nav {
     grid-row: auto;
     grid-column: auto;
   }
-  .gallery{
+  .gallery {
     grid-template-columns: repeat(autofit, minmax(30rem, 1fr));
   }
-  .gallery-head{
+  .gallery-head {
     display: none;
   }
 }
