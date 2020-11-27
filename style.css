@@ -28,6 +28,7 @@ html {
   --large: calc(6rem + 1vw);
   --text: calc(1.5rem + 1vw);
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -414,44 +415,25 @@ input:focus {
     -ms-transition: transform 1s ease;
     -o-transition: transform 1s ease;
   }
-  .menu-check {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translate(5%, -50%);
-    -webkit-transform: translate(5%, -50%);
-    -moz-transform: translate(5%, -50%);
-    -ms-transform: translate(5%, -50%);
-    -o-transform: translate(5%, -50%);
-    width: 5rem;
-    height: 5rem;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 100;
-  }
-  .menu-check:checked + .nav-links {
+
+  .navOpen {
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
   }
-  .menu-check:checked ~ .burger span {
-    background: white;
-  }
-  .menu-check:checked ~ .burger span:nth-child(1) {
+  .toggle .line1 {
     transform: rotateZ(45deg) translateY(300%);
     -webkit-transform: rotateZ(45deg) translateY(300%);
     -moz-transform: rotateZ(45deg) translateY(300%);
     -ms-transform: rotateZ(45deg) translateY(300%);
     -o-transform: rotateZ(45deg) translateY(300%);
   }
-  .menu-check:checked ~ .burger span:nth-child(2) {
+  .toggle .line2 {
     opacity: 0;
   }
-
-  .menu-check:checked ~ .burger span:nth-child(3) {
+  .toggle .line3 {
     transform: rotateZ(-45deg) translateY(-300%);
     -webkit-transform: rotateZ(-45deg) translateY(-300%);
     -moz-transform: rotateZ(-45deg) translateY(-300%);
